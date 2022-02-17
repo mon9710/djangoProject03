@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% load humanize %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        <div class="col-sm-1">
+            <div class="card" style="border-radius: 25px 25px 25px 25px; width:px; height: 200px ; border: #e5e6e7"
+                 align="center">
+
+            </div>
+        </div>
+        <div class="col-sm-10">
+            <div class="card" style="border-radius: 25px 25px 25px 25px; width:px; height: 200px ; border: #e5e6e7">
+                <div class="card-body">
+                    <h1 class="card-title" style="font-family: 'Bodoni MT'">บทความ</h1>
+                    <h5 style="font-family: 'Bodoni MT'">&emsp;&emsp;&emsp;&emsp;หมายถึงงานเขียนที่เผยแพร่ในสื่อสิ่งพิมพ์หรือสื่ออิเล็กทรอนิกส์
+                        ซึ่งมีจุดประสงค์เพื่อเผยแพร่ข่าวสาร ผลการวิจัย
+                        เผยแพร่ความรู้ การวิเคราะห์ทางการศึกษา การวิพากษ์วิจารณ์ เป็นต้น
+                        โดยปกติบทความหนึ่งบทความจะพูดถึงเรื่องใดเรื่องหนึ่งเป็นประเด็นหลักเพียงเรื่องเดียว
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1">
+            <div class="card" style="border-radius: 25px 25px 25px 25px; width:px; height: 200px ; border: #e5e6e7"
+                 align="center">
+            </div>
+        </div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card" style="border-radius: 25px 25px 25px 25px; height: 400px" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/oleg-laptev-QRKJwE6yfJo-unsplash.jpg' %}" class="rounded-circle"
+                             alt="Cinque Terre"
+                             style="width:200px; height: 200px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>1</b></h4>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>“อีกคำสำคัญของชีวิต”</b></h4>
+                    <a href="{% url 'A1' %}" class=" btn btn-outline-dark  fa">Read more.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="border-radius: 25px 25px 25px 25px; height: 400px" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/images.png' %}" class="rounded-circle" alt="Cinque Terre"
+                             style="width:200px; height: 200px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>2</b></h4>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>"วันนี้เสื้อคู่<br>วันหน้าผ้าขี้ริ้ว"</b>
+                    </h4>
+                    <a href="{% url 'A2' %}" class=" btn btn-outline-dark  fa">Read more.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="border-radius: 25px 25px 25px 25px;height: 400px" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/379963270.png' %}" class="rounded-circle" alt="Cinque Terre"
+                             style="width:200px; height: 200px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>3</b></h4>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>"จิ้งจกหางขาด"</b></h4>
+                    <a href="{% url 'A3' %}" class=" btn btn-outline-dark  fa">Read more.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="border-radius: 25px 25px 25px 25px;height: 400px" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/brain-concept-background-white-head-silhouette-various-icons-241771.jpg' %}"
+                             class="rounded-circle" alt="Cinque Terre"
+                             style="width:200px; height: 200px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>4</b></h4>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>“ฉลาด” กับ “คิดเป็น”</b></h4>
+                    <a href="{% url 'A4' %}" class=" btn btn-outline-dark  fa">Read more.</a>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card" style="border-radius: 25px 25px 25px 25px; height: 400px" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/oleg-laptev-QRKJwE6yfJo-unsplash.jpg' %}" class="rounded-circle"
+                             alt="Cinque Terre"
+                             style="width:200px; height: 200px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>5</b></h4>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>“เงินซื้อความสุขไม่ได้ <br>จริงไหม?”</b></h4>
+                    <a href="{% url 'A5' %}" class=" btn btn-outline-dark  fa">Read more.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="border-radius: 25px 25px 25px 25px; height: 400px" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/images.png' %}" class="rounded-circle" alt="Cinque Terre"
+                             style="width:200px; height: 200px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>2</b></h4>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>"วันนี้เสื้อคู่<br>วันหน้าผ้าขี้ริ้ว"</b>
+                    </h4>
+                    <a href="{% url 'A6' %}" class=" btn btn-outline-dark  fa">Read more.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="border-radius: 25px 25px 25px 25px;height: 400px" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/379963270.png' %}" class="rounded-circle" alt="Cinque Terre"
+                             style="width:200px; height: 200px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>3</b></h4>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>"จิ้งจกหางขาด"</b></h4>
+                    <a href="{% url 'A7' %}" class=" btn btn-outline-dark  fa">Read more.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="border-radius: 25px 25px 25px 25px;height: 400px" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/brain-concept-background-white-head-silhouette-various-icons-241771.jpg' %}"
+                             class="rounded-circle" alt="Cinque Terre"
+                             style="width:200px; height: 200px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>4</b></h4>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>“ฉลาด” กับ “คิดเป็น”</b></h4>
+                    <a href="{% url 'A8' %}" class=" btn btn-outline-dark  fa">Read more.</a>
+                </div>
+            </div>
+        </div>
+    </div><br>
+{% endblock %}

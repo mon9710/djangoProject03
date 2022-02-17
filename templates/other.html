@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div align="left">
+        <h2 style="font-family: 'Bodoni MT'; font-size: 25px"><p> อาหารที่ชอบ </p></h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="border-radius: 25px 25px 25px 25px;" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/image_big_6059f70f8a2fb.jpg' %}" class="rounded-circle"
+                             alt="Cinque Terre"
+                             style="width:300px; height: 300px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>“ต้มยำกุ้ง”</b></h4><br>
+                    <h5 style="font-family: 'Bodoni MT'" align="left">:: ส่วนผสมและเครื่องปรุง ::<br>
+
+                        - นำน้ำใส่หม้อแล้วตั้งไฟแรงสุด<br>
+                        - ใส่ตะไคร้ ข่า ใบมะกรูด น้ำปลา น้ำตาล และมะขามเปียก<br>
+                        - ปล่อยให้เดือด 3-4 นาที จนสังเกตเห็นฟองเดือด<br>
+                        - เติมกุ้ง หัวหอม น้ำพริกเผา และเห็ดฟาง<br>
+                        - ต้มต่อประมาณ 10 นาที จนเนื้อกุ้งสุกดี<br>
+                        - ใส่พริกชี้ฟ้า มะเขือเทศ ตามด้วยนมข้นจืด<br>
+                        - คนให้เข้ากัน ปิดเตา แล้วบีบมะนาวตาม<br>
+                        - โรยผักชี และตักเสิร์ฟ<br>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="border-radius: 25px 25px 25px 25px;" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/Screenshot 2022-01-31 121149.png' %}" class="rounded-circle"
+                             alt="Cinque Terre"
+                             style="width:300px; height: 300px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>“มันทิพย์”</b></h4><br>
+                    <h5 style="font-family: 'Bodoni MT'" align="left">:: ส่วนผสมและเครื่องปรุง ::<br>
+
+                        - มันสำปะหลัง<br>(ปอกเปลือกแล้วเฉือนไส้กลางออกแล้ว) 750 กรัม<br>
+                        - ข้าวโพดต้มสุก แกะเมล็ด 100 กรัม<br>
+                        - หัวกะทิ 150 กรัม<br>
+                        - น้ำตาลทรายขาว 160 กรัม <br>(ถ้าชอบหวานมากหน่อยใช้ 180 กรัม)<br>
+                        - เกลือป่น 1/2 ช้อนชา<br>
+                        - ผงฟู 1 ช้อนชา</h5><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="border-radius: 25px 25px 25px 25px;" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/Blog-DSC_8895.jpg' %}" class="rounded-circle" alt="Cinque Terre"
+                             style="width:300px; height: 300px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h4 style="font-family: 'Bodoni MT'" align="center"><b>“ทะเลเผา”</b></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+{% endblock %}

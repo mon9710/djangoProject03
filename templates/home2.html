@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="card" style="border-radius: 25px 25px 25px 25px;">
+        <div class="card-header" style="font-family: 'Bodoni MT';border-radius: 25px 25px 0px 0px; font-size: 18px">
+            คณะบริหารธุรกิจและเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีราชมงคลอีสานวิทยาเขตขอนแก่น
+            <div style="font-family: 'Bodoni MT';border-radius: 25px 25px 0px 0px; font-size: 12px">Faculty of Business
+                Administration
+                and Information Technology, Rajamangala University of Technology Isan
+            </div>
+        </div>
+        <div class="card-body">
+            <div align="center">
+                <img src="{% static 'images/bis.png' %}" class="rounded" alt="Cinque Terre"
+                     style="width:150px; height: 150px;">&emsp;&emsp;
+                <img src="{% static 'images/RMUTI_KORAT.png' %}" class="rounded" alt="Cinque Terre"
+                     style="width:140px; height: 260px;">&emsp;&emsp;
+                <img src="{% static 'images/sad2.png' %}" class="rounded" alt="Cinque Terre"
+                     style="width:150px; height: 200px;">
+            </div>
+            <br>
+            <p class="card-text" style="font-family: 'Bodoni MT'">
+                &emsp;&emsp;&emsp;เริ่มดำเนินการจัดการเรียนการสอนในระดับประกาศนียบัตรวิชาชีพชั้นสูงสาขาวิชาการตลาดเป็นสาขาวิชาแรก
+                เมื่อปี พ.ศ.2537
+                และได้ขยายการจัดการเรียนการสอนเพิ่มขึ้นในสาขาอื่นๆในระดับประกาศนียบัตรวิชาชีพชั้นสูงประกอบด้วยสาขาวิชาการบัญชี
+                และสาขาวิชาคอมพิวเตอร์ธุรกิจ ระดับปริญญาตรี ประกอบด้วยสาขาวิชาการตลาด สาขาวิชาการจัดการ
+                สาขาวิชาระบบสารสนเทศ ทางคอมพิวเตอร์
+                และสาขาวิชาการบัญชีตามลำดับ เพื่อตอบสนองความต้องการของผู้เรียนและ สถานประกอบการในระดับภูมิภาค</p>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="border-radius: 25px 25px 25px 25px; width:px; height: 200px ;" align="center">
+                <div class="card-body">
+                    <img src="{% static 'images/P.png' %}" class="rounded" alt="Cinque Terre"
+                         style="width:50px; height: 50px;">
+                    <h3 class="card-title" style="font-family: 'Bodoni MT'">ปรัชญา (Philosophy)</h3>
+                    <p class="card-text" style="font-family: 'Bodoni MT'">"ความรู้คู่คุณธรรม ลำเลิศเทคโนโลยี"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="border-radius: 25px 25px 25px 25px; width:px; height: 200px ; " align="center">
+                <div class="card-body">
+                    <img src="{% static 'images/D.png' %}" class="rounded" alt="Cinque Terre"
+                         style="width:50px; height: 50px;">
+                    <h3 class="card-title" style="font-family: 'Bodoni MT'">ปณิธาน (Determination)</h3>
+                    <p class="card-text" style="font-family: 'Bodoni MT'">"สร้างคนสู่งาน เชี่ยวชาญเทคโนโลยี"</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="border-radius: 25px 25px 25px 25px; width:px; height: 200px ; " align="center">
+                <div class="card-body">
+                    <img src="{% static 'images/V.png' %}" class="rounded" alt="Cinque Terre"
+                         style="width:50px; height: 50px;">
+                    <h3 class="card-title " style="font-family: 'Bodoni MT'">วิสัยทัศน์ (Vision)</h3>
+                    <p class="card-text" style="font-family: 'Bodoni MT'">
+                        "เป็นผู้นำการผลิตบัณฑิตนักปฏิบัติเชิงสร้างสรรค์ทางด้านบริหารธุรกินและเทคโนโลยีสารสนเทศ
+                        ภายใต้การบูรณาการด้านวิชาการ เพื่อพัฒนาชุมชนและสังคมอย่างยั่งยืน"</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <br>
+{% endblock %}
+

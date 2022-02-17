@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load humanize %}
+{% load static %}
+{% block content %}
+    <div class="card text-center" style="border-radius: 25px 25px 25px 25px" >
+        <div class="card-header" style="border-radius: 25px 25px 25px 25px"align="left">
+            <h3 style="font-family: 'Bodoni MT'">Update Goods</h3>
+            <table class="table border-collapse: collapse; text-white "
+                   style="border-radius: 25px 25px 0px 0px; background-color: #6c757d ; vertical-align: middle; ">
+                <form class="" method="post" >
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.as_p }}
+                    </div>
+                    <br>
+                    <input type="submit" value=" Update " class="btn-light"/>
+                    <input type="button" value="Cancel" class="btn-danger"
+                           onclick="location.href='{% url "goods" %}' "/>
+                </form>
+            </table>
+        </div>
+    </div>
+    </div>
+{% endblock %}

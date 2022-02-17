@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load humanize %}
+{% load static %}
+{% block content %}
+    <div>
+        <h2  style="font-family: 'Bodoni MT'; font-size: 40px"  ><p> Lab 11 </p></h2>
+    </div>
+    <div>
+        <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">ประเภทสินค้า :</b> {{ dataType }}</h5></p>
+        <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">ชื่อผู้จัดทำ :</b> {{  name }}</h5></p>
+        <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">รายละเอียด :</b> {{ info }}</h5></p>
+    </div>
+
+
+    <table class="table border-collapse: collapse; "
+           style="border-radius: 25px 25px 0px 0px; background-color: #6c757d ; ">
+    <tr style="height: 70px; vertical-align: middle;" class="text-white " >
+      <th><h4 align="center" >รหัสสินค้า</h4></th>
+      <th><h4 align="left" style=" font-family: 'Bodoni MT'">ยี่ห้อ</h4></th>
+      <th><h4 align="left" style=" font-family: 'Bodoni MT'">รุ่น</h4></th>
+      <th><h4 align="left" style=" font-family: 'Bodoni MT'">น้ำหนัก</h4></th>
+      <th><h4 align="left" style=" font-family: 'Bodoni MT'">ประเภท</h4></th>
+      <th><h4 align="left" style=" font-family: 'Bodoni MT'">ราคา</h4></th>
+      <th><h4 align="left" style=" font-family: 'Bodoni MT'">ส่วนลด</h4></th>
+      <th><h4 align="left" style=" font-family: 'Bodoni MT'">ยอดสุทธิ</h4></th>
+    </tr>
+    <tbody style="background-color: #ffffff; " >
+    <tr>
+      {% for camera in cameraList %}
+       <tr style="vertical-align: bottom;"  >
+           <td><h5 style="font-family: 'Bodoni MT'" align="center">{{ camera.getCid}}</h5></td>
+           <td><h5 style="font-family: 'Bodoni MT'">{{ camera.getBrand }}</h5></td>
+           <td><h5 style="font-family: 'Bodoni MT'">{{ camera.getModel }}</h5></td>
+           <td><h5 style="font-family: 'Bodoni MT'">{{ camera.getWeight }}</h5></td>
+           <td><h5 style="font-family: 'Bodoni MT'">{{ camera.getCType }}</h5></td>
+           <td><h5 style="font-family: 'Bodoni MT'">{{ camera.getPrice|floatformat:2|intcomma }}</h5></td>
+           <td><h5 style="font-family: 'Bodoni MT'; color: #ff1f09"><b>{{ camera.getDiscount|floatformat:2|intcomma  }}</b></h5></td>
+           <td><h5 style="font-family: 'Bodoni MT'; "><b>{{ camera.getNet|floatformat:2|intcomma  }}</b></h5></td>
+       </tr>
+     {% endfor %}
+    </tr>
+</tbody>
+</table><br>
+
+{% endblock %}

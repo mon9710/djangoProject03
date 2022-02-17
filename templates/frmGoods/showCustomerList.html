@@ -1,0 +1,42 @@
+{% extends "../base.html" %}
+{% load humanize %}
+{% load static %}
+{% block content %}
+        <table class="table border-collapse: collapse; text-white "
+               style="border-radius: 25px 25px 25px 25px; background-color: #6c757d ; vertical-align: middle;">
+            <tr>
+                <th><b><h3 style="font-family: 'Bodoni MT'" align="center">รายการข้อมูลลูกค้า</h3></b></th>
+            </tr>
+    </table>
+    <div style="border-radius: 25px 25px 25px 25px">
+
+        <table class="table border-collapse: collapse; text-white "
+               style="border-radius: 25px 25px 0px 0px; background-color: #6c757d ; vertical-align: middle;">
+            <tr>
+                <th><b><h5 style="font-family: 'Bodoni MT'">รหัสลูกค้า</h5></b></th>
+                <th><b><h5 style="font-family: 'Bodoni MT'">ชื่อ</h5></b></th>
+                <th><b><h5 style="font-family: 'Bodoni MT'">นามสกุล</h5></b></th>
+                <th><b><h5 style="font-family: 'Bodoni MT'">ที่อยู่</h5></b></th>
+                <th><h5 align="center"><a href="{% url 'newCustomer' %}"><i
+                        class="fa fa-plus-circle btn btn-lg btn-light"></i></a></h5></th>
+            </tr>
+            {% for Customer in customerList %}
+                <tr>
+                    <td><h5 style="font-family: 'Bodoni MT'">{{ Customer.cid }}</h5></td>
+                    <td><h5 style="font-family: 'Bodoni MT'">{{ Customer.name }}</h5></td>
+                    <td><h5 style="font-family: 'Bodoni MT'">{{ Customer.surname }}</h5></td>
+                    <td><h5 style="font-family: 'Bodoni MT'">{{ Customer.address }}</h5></td>
+                    <td align="center">
+                        <a href="{% url 'showOneCustomer' Customer.cid %}"><i class="fa fa-search"
+                                                                              style="color: #e5e6e7"></i></a>
+                        <a href="{% url 'updateCustomer' Customer.cid %}"><i class="fa fa-tools"
+                                                                             style="color: #e5e6e7"></i></a>
+                        <a href="{% url 'deleteCustomer' Customer.cid %}"><i class="fa fa-trash"
+                                                                             style="color: rgba(255,44,15,0.72)"></i></a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    </div>
+{% endblock %}

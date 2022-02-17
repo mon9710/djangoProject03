@@ -1,0 +1,22 @@
+{% extends "../base.html" %}
+{#test P11#}
+{% load humanize %}
+{% load static %}
+{% block content %}
+            <h1>ข้อมูลลูกค้า</h1>
+        <div class="card text-center" style="border-radius: 25px 25px 25px 25px">
+          <div class="card-header" style="border-radius: 25px 25px 25px 25px" align="left">
+                    <th><b><h5>รหัสลูกค้า : {{ Customer.cid }}</h5></b></th>
+                    <th><b><h5>ชื่อ : {{ Customer.name }}</h5></b></th>
+                    <th><b><h5>นามสกุล : {{ Customer.surname }}</h5></b></th>
+                    <th><b><h5>ที่อยู่ : {{ Customer.address }}</h5></b></th>
+                    <th><b><h5>เบอร์โทร : {{ Customer.telephone }}</h5></b></th>
+                    <th><b><h5>เพศ : {{ Customer.gender }}</h5></b></th>
+                    <th><b><h5>อาชีพ : {{ Customer.carreer }}</h5></b></th>
+            </table>
+            <h1><p align="left">
+                <a href="{% url 'Customer' %}"><i class="fa fa-arrow-alt-circle-left btn-light"></i></a>
+            </p></h1>
+        </div>
+    </div>
+{% endblock %}

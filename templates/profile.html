@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+<STYLE TYPE="TEXT/CSS"><!--
+A:link {
+    text-decoration: none;
+}
+
+A:visited {
+    text-decoration: none;
+}
+</STYLE>
+{% load static %}
+{% block content %}
+
+    <div class="card text-center" style="border-radius: 25px 25px 25px 25px">
+        <div class="card-header" style="border-radius: 25px 25px 0px 0px">
+            <h3 style="font-family: 'Bodoni MT'">My Profile</h3>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'images/test1.jpg' %}" class="d-block w-100 align-items-center" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/test2.jpg' %}" class="d-block w-100 align-items-center" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/test3.jpg' %}" class="d-block w-100 align-items-center" alt="...">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title ">นายพงษ์ศักดิ์ ทิมิลกุล (ม่อน)</h3>
+            <p class="card-text ">คบคนพาลถ้าจริงใจก็ไม่ผิด คบบัณฑิตไม่จริงใจก็ไร้ผล</p>
+            <a href="https://www.facebook.com/pongsak.timinkun/ " target="_blank" class="btn btn-outline-dark fa  "
+               style="width: 130px"> FACEBOOK</a>
+            <a href="https://www.instagram.com/monn_pt/" target="_blank" class="btn btn-outline-dark  fa  "
+               style="width: 130px">IG</a>
+            <a href="{% url 'resume' %}" class="btn btn-outline-dark  fa " style="width: 130px ; "> INFO</a>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+    </div>
+    <br>
+
+
+    <!--
+    <div class="row " >
+      <div class="col-sm-6 ">
+        <div class="card " style="border-radius: 25px 25px 25px 25px">
+          <div class="card-body  bg-black "  style="border-radius: 25px 25px 25px 25px; " >
+            <i class="fa fa-home" style="color: #d5d7d8"> พิกัดที่อยู่</i>
+            <p class="card-text " style="color:#d5d7d8 ">บ้านหนองแปน ต.บุ่งแก้ว อ.โนนสะอาด จ.อุดรธานี</p>
+            <a href="https://www.google.com/maps/d/u/0/edit?mid=17_lZw5dPwnaYrxE--oX-Lpw8VAw-X8QI&usp=sharing" class="btn btn-outline-light fa fa-mouse btn-lg " target="_blank"> Click</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <div class="card" style="border-radius: 25px 25px 25px 25px">
+          <div class="card-body  bg-black" style="border-radius: 25px 25px 25px 25px">
+            <i class="fa fa-home" style="color: #d5d7d8"> พิกัดที่อยู่</i>
+            <p class="card-text " style="color:#d5d7d8 ">บ้านหนองแปน ต.บุ่งแก้ว อ.โนนสะอาด จ.อุดรธานี</p>
+              <div align="center">
+                  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=17_lZw5dPwnaYrxE--oX-Lpw8VAw-X8QI&ehbc=2E312F" width="1000" height="300" style="border-radius: 25px 25px 25px 25px " ></iframe>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <br>
+{% endblock %}
+
+

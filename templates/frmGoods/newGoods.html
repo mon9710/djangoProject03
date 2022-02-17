@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div style="border: 1px groove; background-color: #EEEBEB;"><br><br>
+        <div class="container">
+            <h1>Add Product </h1>
+            <form class="" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form }}
+                </div>
+                <br>
+                <input type="submit" value="Save" class="btn-light"/>
+                <input type="button" value="Cancel" class="btn-danger" onclick="location.href='{% url "goods" %}' "/>
+            </form>
+            <br>
+        </div>
+    </div>
+{% endblock %}

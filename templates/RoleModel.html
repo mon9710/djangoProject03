@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div align="center">
+        <h2 style="font-family: 'Bodoni MT'; font-size: 40px"><p> Role Model </p></h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="border-radius: 25px 25px 25px 25px;" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/157617943_286179669529954_1326192512918527073_n.jpg' %}"
+                             class="rounded-circle" alt="Cinque Terre"
+                             style="width:300px; height: 300px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h2 style="font-family: 'Bodoni MT'" align="center"><b>“กอล์ฟมาเยือน”</b></h2>
+                    <p class="card-text"> บล็อกเกอร์, ช่างภาพอิสระ, ยูทูปเบอร์</p>
+                    <a href="https://www.youtube.com/channel/UCLq6xfs9_wGYGxdCYEqA6Ow" target="_blank"
+                       class="btn btn-outline-dark  fa">YOUTUBE</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="border-radius: 25px 25px 25px 25px;" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/photoshack.jpg' %}" class="rounded-circle" alt="Cinque Terre"
+                             style="width:300px; height: 300px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h2 style="font-family: 'Bodoni MT'" align="center"><b>“PhotoHackz”</b></h2>
+                    <p class="card-text"> graphic designer , ยูทูปเบอร์</p>
+                    <a href="https://www.youtube.com/channel/UCMSW7ZU0nSEMdD2AG29wn0Q" target="_blank"
+                       class="btn btn-outline-dark  fa">YOUTUBE</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="border-radius: 25px 25px 25px 25px;" align="center">
+                <div class="card-body">
+                    <div align="center">
+                        <img src="{% static 'images/unnaกดmed.jpg' %}" class="rounded-circle" alt="Cinque Terre"
+                             style="width:300px; height: 300px; border-radius: 25px 25px 25px 25px;">
+                    </div>
+                    <br>
+                    <h2 style="font-family: 'Bodoni MT'" align="center"><b>“Startyourway Official”</b></h2>
+                    <p class="card-text"> การเงิน, ปรัชญาการใช้ชีวิต, ยูทูปเบอร์</p>
+                    <a href="https://www.youtube.com/c/Startyourway" target="_blank" class="btn btn-outline-dark  fa">YOUTUBE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+{% endblock %}

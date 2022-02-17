@@ -1,0 +1,23 @@
+{% extends "../base.html" %}
+{#test P11#}
+{% load humanize %}
+{% load static %}
+{% block content %}
+        <h1>ข้อมูลสินค้า</h1>
+        <div class="card text-center" style="border-radius: 25px 25px 25px 25px">
+          <div class="card-header" style="border-radius: 25px 25px 25px 25px" align="left">
+                    <th><b><h5>รหัสสินค้า : {{ Goods.gid }}</h5></b></th>
+                    <th><b><h5>ชื่อ : {{ Goods.name }}</h5></b></th>
+                    <th><b><h5>ยี่ห้อ : {{ Goods.model }}</h5></b></th>
+                    <th><b><h5>รุ่น : {{ Goods.model }}</h5></b></th>
+                    <th><b><h5>ราคา : {{ Goods.price }}</h5></b></th>
+                    <th><b><h5>จำนวนคงเหลือ : {{ Goods.net }}</h5></b></th>
+                    <th><b><h5>คุณสมบัติ : {{ Goods.property }}</h5></b></th>
+                    <th><b><h5>ชื่อประเภทสินค้า : {{ Goods.goodsCategory.gc_name }}</h5></b></th>
+            </table>
+            <h1><p align="left">
+                <a href="{% url 'goods' %}"><i class="fa fa-arrow-alt-circle-left btn-light"></i></a>
+            </p></h1>
+        </div>
+    </div>
+{% endblock %}

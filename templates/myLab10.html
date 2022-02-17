@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load humanize %}
+{% load static %}
+{% block content %}
+
+    <div>
+        <h2 style="font-family: 'Bodoni MT'; font-size: 40px"><p> Lab 10 </p></h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <p><h5><b style="color: #000000 ; font-family: 'Bodoni MT'">ชื่อ-สกุล :</b> {{ name }}</h5></p>
+            <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">รหัสนักศึกษา :</b> {{ stdId }}</h5></p>
+            <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">ที่อยู่ :</b> {{ address }}</h5></p>
+            <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">ภูมิลำเนา :</b> {{ domicile }}</h5></p>
+            <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">เพศ :</b> {{ gender }}</h5></p>
+
+        </div>
+        <div class="col-sm-6">
+            <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">น้ำหนัก :</b> {{ weight }}</h5></p>
+            <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">ส่วนสูง :</b> {{ height }}</h5></p>
+            <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">สีที่ชอบ :</b> {{ color }}</h5></p>
+            <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">อาหารที่ชอบ :</b> {{ food }}</h5></p>
+            <p><h5><b style="color: #000000; font-family: 'Bodoni MT'">สถานะ :</b> {{ occupation }}</h5></p>
+        </div>
+        <br><br>
+    </div>
+    <table class="table border-collapse: collapse;"
+           style="border-radius: 25px 25px 0px 0px; background-color: #6c757d ; ">
+        <thead>
+        <tr style="height: 70px; vertical-align: middle;" class="text-white ">
+            <th><h4 align="left" style=" font-family: 'Bodoni MT'; ">ชื่อสินค้า</h4></th>
+            <th><h4 align="righr" style=" font-family: 'Bodoni MT'">ราคา</h4></th>
+            <th><h4 align="left" style=" font-family: 'Bodoni MT'">รูปภาพ</h4></th>
+        </tr>
+        <tbody style="background-color: #ffffff; ">
+        <tr>
+            {% for myproduct in product %}
+                <tr style="vertical-align: middle;">
+                    <td><h5 style="font-family: 'Bodoni MT'"><b>{{ myproduct.0 }}</b></h5></td>
+                    <td><h5 style="font-family: 'Bodoni MT';color: #dc3545">
+                        <b>{{ myproduct.1|floatformat:2|intcomma }}</b></h5></td>
+                    <td>
+                        <a href="{% static 'images/camera/'|add:myproduct.2 %}">
+                            <img src="{% static 'images/camera/'|add:myproduct.2 %}" style="width: 50px; height: 50px"
+                                 class="hover zoom">
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tr>
+        <tr>
+        </tr>
+        </tbody>
+        </thead>
+    </table><br>
+
+{% endblock %}

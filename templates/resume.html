@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+<STYLE TYPE="TEXT/CSS"><!--
+A:link {
+    text-decoration: none;
+}
+
+A:visited {
+    text-decoration: none;
+}
+</STYLE>
+{% load static %}
+{% block content %}
+
+    <table class="table" style="background-color: #ffffff; border-radius: 25px 25px 25px 25px;">
+        <tr>
+            <th class="col-2">
+                <div align="right" style="alignment: top">
+                    <img src="{% static 'images/picme.jpg' %}" alt="Cinque Terre"
+                         style="width:150px; height: 180px; border-radius: 25px 25px 25px 25px;">
+                </div>
+            </th>
+            <th class="col-6">
+                <h3 style="font-family: 'Bodoni MT';"><b>นายพงษ์ศักดิ์ ทิมิลกุล</b></h3>
+                <h5 style="font-family: 'Bodoni MT'">Phongsak Thiminkul</h5>
+                <h5 style="font-family: 'Bodoni MT'">อายุ : 21ปี </h5>
+                <h5 style="font-family: 'Bodoni MT'">วันเกิด : 13 สิงหาคม 2543 สัญชาติ : ไทย </h5>
+                <h5 style="font-family: 'Bodoni MT'">เบอร์โทร : 0957644376 </h5>
+                <h5 style="font-family: 'Bodoni MT'">อีเมลล์ : phongsak.th@rmuti.ac.th</h5>
+            </th>
+            <th class="col-4">
+                <div CLASS="col-lg-12 " align="center">
+                    <h5 style="font-family: 'Bodoni MT'">Location</h5>
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=17_lZw5dPwnaYrxE--oX-Lpw8VAw-X8QI&ehbc=2E312F"
+                            width="200" height="150" style="border-radius: 25px 25px 25px 25px "></iframe>
+                </div>
+            </th>
+        </tr>
+    </table>
+    <table class="table border-0" style="background-color: #ffffff; border-radius: 25px 25px 25px 25px;">
+        <tr style="border: #e5e6e7">
+            <th class="col-4">
+                <div align="center">
+                    <img src="{% static 'images/kut.png' %}" class="rounded" alt="Cinque Terre"
+                         style="width:150px; height: 160px;">
+                </div>
+            </th>
+            <th class="col-4">
+                <div align="center">
+                    <img src="{% static 'images/kan.png' %}" class="rounded" alt="Cinque Terre"
+                         style="width:150px; height: 150px;">
+                </div>
+            </th>
+            <th class="col-4">
+                <div align="center">
+                    <img src="{% static 'images/RMUTI_KORAT.png' %}" class="rounded" alt="Cinque Terre"
+                         style="width:100px; height: 180px;">
+                </div>
+            </th>
+        </tr>
+    </table>
+    <table class="table " style="background-color: #ffffff; border-radius: 25px 25px 25px 25px;">
+        <tr>
+            <th class="col-4" style="border: #e5e6e7">
+                <div align="center">
+                    <h4 style="font-family: 'Bodoni MT'"><b>โรงเรียนบ้านกุดขนวน</b></h4><br>
+                    <h5 style="font-family: 'Bodoni MT';">ชั้นประถมศึกษา ปีที่ 1 - 6 </h5>
+                    <h5 style="font-family: 'Bodoni MT'">ชั้นมัธยมศึกษา ปีที่ 1 - 3 </h5><br>
+                    <a href="https://goo.gl/maps/cgvDD3goD6ptXwLN6" target="_blank"
+                       class="btn btn-outline-dark  fa fa-location-arrow" style="width: 130px ; "> LOCATION</a>
+                </div>
+            </th>
+            <th class="col-4" style="border: #e5e6e7">
+                <div align="center">
+                    <h4 style="font-family: 'Bodoni MT'"><b>วิทยาลัยการอาชีพกุมภวาปี</b></h4><br>
+                    <h5 style="font-family: 'Bodoni MT';">ประกาศนียบัตรวิชาชีพ(ปวช.) ปีที่ 1 - 3 </h5>
+                    <h5 style="font-family: 'Bodoni MT'">ประกาศนียบัตรวิชาชีพชั้นสูง(ปวส.) ปีที่ 1 - 2 </h5><br>
+                    <a href="https://goo.gl/maps/EnxyotLJzSSt9NQh9" target="_blank"
+                       class="btn btn-outline-dark  fa fa-location-arrow" style="width: 130px ; "> LOCATION</a>
+                </div>
+            </th>
+            <th class="col-4" style="border: #e5e6e7">
+                <div align="center">
+                    <h4 style="font-family: 'Bodoni MT';"><b>มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน
+                        วิทยาเขตขอนแก่น(KKC.RMUTI.)</b></h4><br>
+                    <h5 style="font-family: 'Bodoni MT'">กำลังศึกษา</h5><br>
+                    <a href="https://g.page/RMUTI-KKC?share" target="_blank"
+                       class="btn btn-outline-dark  fa fa-location-arrow" style="width: 130px ; "> LOCATION</a>
+                </div>
+            </th>
+        </tr>
+    </table><br><br>
+    <h5 style="font-family: 'Bodoni MT'; " align="center"><b>ประสบการณ์ทำงาน (Working Experience)</b></h5>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item" style="border-radius: 25px 25px 0px 0px;">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne" style="border-radius: 25px 25px 0px 0px;">
+                    บาร์บีคิวพลาซ่า - สาขาเซ็นทรัลเวสเกตุ จ.นนทบุรี
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" style="border-radius: 25px 25px 25px 25px">
+                            <div class="carousel-item active">
+                                <img src="{% static 'images/b1.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="{% static 'images/b2.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="{% static 'images/b3.png' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="{% static 'images/b4.png' %}" class="d-block w-100" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <br>
+
+                    <div>
+
+                    </div>
+
+                    &emsp;&emsp;&emsp;&emsp;บริษัท เดอะบาร์บีคิวพลาซ่า จำกัด (ชื่อใหม่ บริษัท ฟู้ดแพชชั่น จำกัด)
+                    ก่อตั้งขึ้นเมื่อปี 2530 โดย คุณชูพงศ์
+                    ชูพจน์เจริญ เป็นบริษัทที่ดำเนินธุรกิจร้านอาหารทั้งในประเทศและต่างประเทศ
+                    มีแบรนด์ร้านอาหารที่อยู่ภายใต้การบริหารงานของบริษัทฯ
+                    จำนวน 4 แบรนด์ ได้แก่ บาร์บีคิวพลาซ่า จุ่มแซ่บฮัท ฌานา สเปซ คิว และ เรดซัน
+                    นำเสนอรูปแบบอาหารในสไตล์ที่แตกต่างกันออกไป
+                    ครอบคลุมความต้องการของลูกค้าที่หลากหลาย<br>
+
+                    &emsp;&emsp;&emsp;&emsp;บาร์บีคิวพลาซ่า
+                    เป็นแบรนด์ร้านอาหารประเภทปิ้งย่างบนกระทะที่มีเอกลักษณ์เฉพาะตัว
+                    เปิดให้บริการสาขาแรกที่ศูนย์การค้าเซ็นทรัลพลาซา ลาดพร้าวในเดือนกรกฎาคม ปี 2530
+                    ลักษณะอาหารเป็นรูปแบบปิ้งย่างในสไตล์มองโกเลี่ยนผสมญี่ปุ่นซึ่งภายหลังจากการเปิดสาขาแรก
+                    ร้านบาร์บีคิวพลาซ่าได้รับความนิยมและการตอบรับเป็นอย่างดีจากลูกค้าจำนวนมาก ทำให้บริษัทฯ
+                    ได้ขยายสาขาเพิ่มขึ้นทั้งในกรุงเทพฯ และต่างจังหวัดอย่างต่อเนื่อง
+                    ปัจจุบันมีร้านบาร์บีคิวพลาซ่าในประเทศไทย
+                    จำนวนมากกว่า 156 สาขา ตั้งอยู่ ณ ศูนย์การค้าชั้นนำ และห้างค้าปลีกขนาดใหญ่
+                    ทั้งในกรุงเทพฯและตามหัวเมืองหลักของจังหวัดต่าง ๆ
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    7-Eleven - สาขา ส.ภาณุรังษี จ.นนทบุรี
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" style="border-radius: 25px 25px 25px 25px">
+                            <div class="carousel-item active">
+                                <img src="{% static 'images/7-1.png' %}" class="d-block w-100" alt="...">
+
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="{% static 'images/7-2.png' %}" class="d-block w-100" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <br>
+
+                    <div>
+
+                    </div>
+                    &emsp;&emsp;&emsp;&emsp;ร้านสะดวกซื้อ เซเว่น อีเลฟเว่น ถือกำเนิดขึ้นที่ประเทศไทยเมื่อปี 2532[4]
+                    โดยสาขาแรกตั้งอยู่ที่ ซอยพัฒพงษ์ โดยผู้ได้รับสิทธิในการใช้เครื่องหมายการค้าคือ
+                    บริษัท ซีพี ออลล์ จำกัด (มหาชน) ซึ่งเป็นสิทธิในการใช้แบรนด์ 7-11
+                    สำหรับธุรกิจค้าปลีกประเภทร้านค้าสะดวกซื้อ<br>
+
+                    &emsp;&emsp;&emsp;&emsp;นอกเหนือจากธุรกิจค้าปลีกใน เซเว่น อีเลฟเว่น ให้บริการแล้ว
+                    ยังประกอบธุรกิจอื่นๆ ยกตัวอย่างเช่น
+                    ธุรกิจตัวแทนการรับชำระเงิน โดยมีการตั้งบริษัทแยกออกมาโดยใช้ชื่อว่า บริษัท เคาน์เตอร์ เซอร์วิส
+                    จำกัด รวมถึง บริษัท ซีพีแรม จำกัด ซึ่งเป็นบริษัทเกี่ยวกับการซ่อมแซมอุปกรณ์ค้าปลีก
+                    และหน่วยงานที่เป็นรูปแบบบริษัทซึ่งดูแลระบบขององค์กรณ์โดยรวม
+                    (ด้านสารสนเทศ) บริษัท โกซอฟท์ ประเทศไทย จำกัด ด้วย
+                </div>
+            </div>
+        </div>
+
+    </div><br>
+{% endblock %}
+
+
